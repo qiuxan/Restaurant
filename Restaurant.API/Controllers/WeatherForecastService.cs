@@ -1,6 +1,6 @@
 ﻿namespace Restaurant.API.Controllers
 {
-    public class WeatherForecastService
+    public class WeatherForecastService : IWeatherForecastService
     {
         private static readonly string[] Summaries = new[]
         {
