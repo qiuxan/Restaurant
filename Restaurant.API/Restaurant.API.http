@@ -1,6 +1,7 @@
-@Restaurant.API_HostAddress = http://localhost:5139
+@baseUrl = http://localhost:5139
 
-GET {{Restaurant.API_HostAddress}}/weatherforecast/
+GET {{baseUrl}}/api/weatherforecast/
 Accept: application/json
+
 
 ###
