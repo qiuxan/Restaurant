@@ -19,9 +19,9 @@ public class WeatherForecastController : ControllerBase
     }
 
     [HttpGet("{take}/allweather")]
-    public IEnumerable<WeatherForecast> Get([FromQuery] int max, [FromRoute] int take)
+    public ActionResult<WeatherForecast> Get([FromQuery] int max, [FromRoute] int take)
     {
         var result = _weatherForecastService.Get();
-        return result;
+        return Ok(result);
     }
 }
