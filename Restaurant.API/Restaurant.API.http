@@ -1,4 +1,6 @@
-@baseUrl = http://localhost:5139
+@host = http://localhost
+@port = 5139
+@baseUrl = {{host}}:{{port}}
 
 GET {{baseUrl}}/api/weatherforecast/
 Accept: application/json
