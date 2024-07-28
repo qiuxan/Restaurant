@@ -2,7 +2,7 @@
 @port = 5139
 @baseUrl = {{host}}:{{port}}
 
-GET {{baseUrl}}/api/weatherforecast/
+GET {{baseUrl}}/api/WeatherForecast/2/allweather?max=3
 Accept: application/json
 
 
