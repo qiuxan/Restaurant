@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
-namespace Restaurant.API.Controllers;
+namespace Restaurants.API.Controllers;
 
 public class TemperatureRequest {
 

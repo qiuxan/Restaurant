@@ -1,4 +1,4 @@
-﻿namespace Restaurant.API.Controllers
+﻿namespace Restaurants.API.Controllers
 {
     public class WeatherForecastService : IWeatherForecastService
     {

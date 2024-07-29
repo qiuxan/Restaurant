@@ -1,5 +1,5 @@
 ﻿
-namespace Restaurant.API.Controllers
+namespace Restaurants.API.Controllers
 {
     public interface IWeatherForecastService
     {
