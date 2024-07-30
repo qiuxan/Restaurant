@@ -1,0 +1,5 @@
+﻿@baseURL = https://localhost:7206
+
+GET {{baseURL}}/api/restaurants
+
+###
