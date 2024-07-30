@@ -15,6 +15,15 @@ namespace Restaurants.API.Controllers
             var restaurants = await restaurantsServices.GetAllRestaurants();
             return Ok(restaurants);
         }
-      
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById([FromRoute]int id)
+        {
+            var restaurant = await restaurantsServices.GetRestaurantById(id);
+            if (restaurant is null)            
+                return NotFound();         
+            return Ok(restaurant);
+        }
+
     }
 }

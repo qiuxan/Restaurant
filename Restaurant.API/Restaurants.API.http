@@ -3,3 +3,7 @@
 GET {{baseURL}}/api/restaurants
 
 ###
+
+GET {{baseURL}}/api/restaurants/2 
+
+###
