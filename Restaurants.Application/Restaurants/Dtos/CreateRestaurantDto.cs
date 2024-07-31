@@ -1,8 +1,6 @@
-﻿using System.Net.Sockets;
+﻿namespace Restaurants.Application.Restaurants.Dtos;
 
-namespace Restaurants.Domain.Entities;
-
-public class Restaurant
+public class CreateRestaurantDto
 {
     public int Id { get; set; }
     public string Name { get; set; } = default!;
@@ -12,9 +10,10 @@ public class Restaurant
 
     public string? ContactEmail { get; set; }
     public string? ContactNumber { get; set; }
-    
 
-    public Address? Address { get; set; }
-    public List<Dish> Dishes { get; set; } = new();
+
+    public string? City { get; set; }
+    public string? Street { get; set; }
+    public string? PostalCode { get; set; }
 
 }
