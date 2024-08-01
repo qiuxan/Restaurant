@@ -10,9 +10,8 @@ GET {{baseURL}}/api/restaurants/1
 
 POST {{baseURL}}/api/restaurants
 Content-Type: application/json
-
 {
-  "name": "New Restaurant",
+  "Name": "New Restaurant",
   "Category":"Italian",
   "Description":"New Description"
 }
