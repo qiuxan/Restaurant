@@ -13,13 +13,9 @@ public class CreatRestaurantDtoValidator: AbstractValidator<CreateRestaurantDto>
         
 
         RuleFor(dto => dto.Category)
-            .Custom((category, context) =>
-            {
-                if (!validaCategories.Contains(category))
-                {
-                    context.AddFailure("Category must be one of the following: Italian, Polish, Mexican, Chinese, Indian, Japanese, Thai");
-                }
-            });
+            .Must(category => validaCategories.Contains(category))
+            .WithMessage("Category must be one of the following: Italian, Polish, Mexican, Chinese, Indian, Japanese, Thai");
+
         RuleFor(dto => dto.ContactEmail)
             .EmailAddress().WithMessage("Please provide an email address!");
 
