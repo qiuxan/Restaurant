@@ -4,14 +4,14 @@ GET {{baseURL}}/api/restaurants
 
 ###
 
-GET {{baseURL}}/api/restaurants/1 
+GET {{baseURL}}/api/restaurants/2002 
 
 ###
 
 POST {{baseURL}}/api/restaurants
 Content-Type: application/json
 {
-  "Name": "New Restaurant",
+  "Name": "d",
   "Category":"Italian",
   "Description":"New Description"
 }
@@ -19,5 +19,16 @@ Content-Type: application/json
 ###
 
 DELETE {{baseURL}}/api/restaurants/1002
+
+###
+
+PATCH {{baseURL}}/api/restaurants/2002
+Content-Type: application/json
+
+{
+  "Name": "ddd",
+  "Description":"New Description222",
+  "HasDelivery":true
+}
 
 ###

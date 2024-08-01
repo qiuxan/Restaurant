@@ -20,7 +20,7 @@ public class DeleteRestaurantCommandHandler(
             return false;
         }
 
-        await restaurantRepository.Delete(restaurant);
+        await restaurantRepository.SaveChanges();
         return true;  
     }
 }
