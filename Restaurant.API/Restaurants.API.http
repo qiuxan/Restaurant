@@ -26,7 +26,7 @@ PATCH {{baseURL}}/api/restaurants/2002
 Content-Type: application/json
 
 {
-  "Name": "ddd",
+  "Name": "ddd22",
   "Description":"New Description222",
   "HasDelivery":true
 }
