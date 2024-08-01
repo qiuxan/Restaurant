@@ -5,7 +5,7 @@ using Restaurants.Domain.Entities;
 
 namespace Restaurants.API.Controllers;
 
-[ApiController]
+//[ApiController]
 [Route("api/[controller]")]
 public class RestaurantsController(IRestaurantsServices restaurantsServices)
     : ControllerBase
@@ -29,6 +29,11 @@ public class RestaurantsController(IRestaurantsServices restaurantsServices)
     [HttpPost]
     public async Task<IActionResult> CreateRestaurant([FromBody] CreateRestaurantDto restaurant)
     {
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+
         int id = await restaurantsServices.Create(restaurant);
 
         return CreatedAtAction(nameof(GetById), new { id }, null);
