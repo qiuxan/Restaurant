@@ -12,9 +12,7 @@ POST {{baseURL}}/api/restaurants
 Content-Type: application/json
 
 {
-  "Name": "ttt",
-  "Category":"ccc",
-  "Description": "ddd"
+  
 }
 
 ###
