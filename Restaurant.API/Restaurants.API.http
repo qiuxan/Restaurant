@@ -17,3 +17,7 @@ Content-Type: application/json
 }
 
 ###
+
+DELETE {{baseURL}}/api/restaurants/1002
+
+###
