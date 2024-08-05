@@ -2,6 +2,7 @@
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Restaurants.Application.Restaurants.Commands.DeleteRestaurant;
+using Restaurants.Domain.Entities;
 using Restaurants.Domain.Exceptions;
 using Restaurants.Domain.Repositories;
 
@@ -20,7 +21,7 @@ public class UpdateRestaurantCommandHandler(
         if (restaurant is null)
         {
             logger.LogWarning($"Restaurant with id {request.Id} not found");
-            throw new NotFoundException($"Restaurant with id {request.Id} not found");
+            throw new NotFoundException(nameof(Restaurant), request.Id.ToString());
         }
 
         mapper.Map(request, restaurant);

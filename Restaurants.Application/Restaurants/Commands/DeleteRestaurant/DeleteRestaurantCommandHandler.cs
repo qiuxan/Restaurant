@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Microsoft.Extensions.Logging;
+using Restaurants.Domain.Entities;
 using Restaurants.Domain.Exceptions;
 using Restaurants.Domain.Repositories;
 
@@ -18,7 +19,7 @@ public class DeleteRestaurantCommandHandler(
         if (restaurant is null)
         {
             logger.LogWarning($"Restaurant with id {request.Id} not found");
-            throw new NotFoundException($"Restaurant with id {request.Id} not found");
+            throw new NotFoundException(nameof(Restaurant), request.Id.ToString());
         }
 
         await restaurantRepository.SaveChanges();
