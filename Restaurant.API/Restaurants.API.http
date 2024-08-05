@@ -4,7 +4,7 @@ GET {{baseURL}}/api/restaurants
 
 ###
 
-GET {{baseURL}}/api/restaurants/2002 
+GET {{baseURL}}/api/restaurants/20021 
 
 ###
 
@@ -18,11 +18,11 @@ Content-Type: application/json
 
 ###
 
-DELETE {{baseURL}}/api/restaurants/1002
+DELETE {{baseURL}}/api/restaurants/100222
 
 ###
 
-PATCH {{baseURL}}/api/restaurants/2002
+PATCH {{baseURL}}/api/restaurants/200222
 Content-Type: application/json
 
 {
