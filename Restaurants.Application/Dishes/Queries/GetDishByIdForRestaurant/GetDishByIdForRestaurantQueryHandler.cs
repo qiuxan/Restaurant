@@ -8,7 +8,7 @@ using Restaurants.Domain.Entities;
 using Restaurants.Domain.Exceptions;
 using Restaurants.Domain.Repositories;
 
-namespace Restaurants.Application.Dishes.Commands.Queries.GetDishByIdForRestaurant;
+namespace Restaurants.Application.Dishes.Queries.GetDishByIdForRestaurant;
 
 public class GetDishByIdForRestaurantQueryHandler(
     ILogger<GetDishByIdForRestaurantQueryHandler> logger,
@@ -18,7 +18,7 @@ public class GetDishByIdForRestaurantQueryHandler(
 {
     public async Task<DishDto> Handle(GetDishByIdForRestaurantQuery request, CancellationToken cancellationToken)
     {
-        logger.LogInformation("Getting  dishId: {dishId} for restaurant: {RestaurantId}", request.DishId,request.RestaurantId);
+        logger.LogInformation("Getting  dishId: {dishId} for restaurant: {RestaurantId}", request.DishId, request.RestaurantId);
 
         var restaurant = await restaurantsRepository.GetRestaurantById(request.RestaurantId);
         if (restaurant == null) throw new NotFoundException(nameof(Restaurant), request.RestaurantId.ToString());

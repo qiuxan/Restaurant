@@ -7,7 +7,7 @@ using Restaurants.Domain.Entities;
 using Restaurants.Domain.Exceptions;
 using Restaurants.Domain.Repositories;
 
-namespace Restaurants.Application.Dishes.Commands.Queries.GetDishesForRestaurant;
+namespace Restaurants.Application.Dishes.Queries.GetDishesForRestaurant;
 
 public class GetDishesForRestaurantQueryHandler(
     ILogger<GetDishesForRestaurantQueryHandler> logger,

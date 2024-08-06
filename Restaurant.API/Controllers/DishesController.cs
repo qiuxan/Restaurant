@@ -1,8 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Restaurants.Application.Dishes.Commands.CreateDish;
-using Restaurants.Application.Dishes.Commands.Queries.GetDishByIdForRestaurant;
-using Restaurants.Application.Dishes.Commands.Queries.GetDishesForRestaurant;
+using Restaurants.Application.Dishes.Queries.GetDishByIdForRestaurant;
+using Restaurants.Application.Dishes.Queries.GetDishesForRestaurant;
 using Restaurants.Application.Dishes.Dtos;
 using Restaurants.Domain.Entities;
 

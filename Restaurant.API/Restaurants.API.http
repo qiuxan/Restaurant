@@ -50,6 +50,6 @@ GET {{baseURL}}/api/restaurant/1/dishes
 
 ###
 
-GET {{baseURL}}/api/restaurant/1/dishes/1323
+GET {{baseURL}}/api/restaurant/1/dishes/1
 
 ###
