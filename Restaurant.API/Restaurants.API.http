@@ -33,7 +33,7 @@ Content-Type: application/json
 
 ###
 
-POST {{baseURL}}/api/restaurant/2/dishes
+POST {{baseURL}}/api/restaurant/22/dishes
 Content-Type: application/json
 {
   "Name": "Spaghetti Bolognese",
