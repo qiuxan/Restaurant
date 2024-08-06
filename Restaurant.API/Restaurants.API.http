@@ -4,7 +4,7 @@ GET {{baseURL}}/api/restaurants
 
 ###
 
-GET {{baseURL}}/api/restaurants/2002 
+GET {{baseURL}}/api/restaurants/1
 
 ###
 
@@ -29,6 +29,19 @@ Content-Type: application/json
   "Name": "ddd22",
   "Description":"New Description222",
   "HasDelivery":true
+}
+
+###
+
+POST {{baseURL}}/api/restaurant/1/dishes
+Content-Type: application/json
+
+
+{
+  "Name": "Spaghetti Bolognese",
+  "Description": "Classic Italian pasta dish with rich meat sauce",
+  "Price": 12.99,
+  "KiloCalories": 750
 }
 
 ###
