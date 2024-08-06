@@ -45,3 +45,11 @@ Content-Type: application/json
 }
 
 ###
+
+GET {{baseURL}}/api/restaurant/1/dishes
+
+###
+
+GET {{baseURL}}/api/restaurant/1/dishes/1323
+
+###
