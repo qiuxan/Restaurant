@@ -55,3 +55,21 @@ GET {{baseURL}}/api/restaurant/1/dishes/1
 DELETE {{baseURL}}/api/restaurant/2/dishes
 
 ###
+
+POST {{baseURL}}/register
+Content-Type: application/json
+
+{
+    "email": "testuser2@test.com",
+    "password": "Password1!"
+}
+
+###
+
+POST {{baseURL}}/login
+Content-Type: application/json
+
+{
+    "email": "testuser@test.com",
+    "password": "Password1!"
+}
