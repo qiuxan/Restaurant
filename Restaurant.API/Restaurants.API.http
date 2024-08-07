@@ -1,7 +1,9 @@
 ﻿@baseURL = https://localhost:7206
+@token = CfDJ8GadAzmW3mlJh06rLi7m0YnhFBvjrtRc61Z2RyaZNbmwGbqyw5VH5DDIgkpm7TnIxLQkR1Y8o-Fgf5Kt55yVCX8omlpfbR48fczsY5rXX2G3x2DvsVFQSk0VJfLTBsnm47xnSa8RRElOUgoqqZ8_PPyi4xli8xeEqyp6kfVQPj7mFbGZF4VmDZmm01I3lUaGFpFIE6uKTeeSpuNNxumlgGvvMF2-mGYeZ9EUKAVuPiOqPLTwj7jlT_570v2v4hZ5XNZmJ8u7XGOwyX-XZIO80h_fnSn9wYutqwo6u8rgg8rgzgxKyV-uq7mLylS1AOplEmBxSk3HL2dTRFWfK0LZjpwPfU9_Eh3BHqwLYh8chsBg_L9_NSBr3gnZInenaJ4S_GMl5dGSwhX_tummS4j6ydXsqnj2IVBDhRwuBQKvweA6tTewVpn0AHOzbCwA-QjDihD7mWXUvpR0n1L1yip4BjY4RbwTyTAK4CpsswBpu1JW0fi2-XhEvAS-8x8Helo-UywTZ3V3s_sPnI5mzGA8khXzw0tabNyj-_hk7JD_ByTK1e21tGsOFnaug22cKYPR9ZWPcrjKyenKy5VkWH2rsC8gVRxSg2My8WxIfNaEPxmH-ee3sMygwKW6aNA_YqMNpane_SM_uKNHr7vqMPsDKzqEdkpJBxTBU2PJfcDCa4X__nlJjvjAYO8jlSerYA87FA
+
 
 GET {{baseURL}}/api/restaurants
-
+Authorization: Bearer {{token}}
 ###
 
 GET {{baseURL}}/api/restaurants/2
@@ -56,7 +58,7 @@ DELETE {{baseURL}}/api/restaurant/2/dishes
 
 ###
 
-POST {{baseURL}}/register
+POST {{baseURL}}/api/identity/register
 Content-Type: application/json
 
 {
@@ -66,7 +68,7 @@ Content-Type: application/json
 
 ###
 
-POST {{baseURL}}/login
+POST {{baseURL}}/api/identity/login
 Content-Type: application/json
 
 {
