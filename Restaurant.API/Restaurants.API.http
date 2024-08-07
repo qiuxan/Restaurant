@@ -22,7 +22,7 @@ DELETE {{baseURL}}/api/restaurants/100222
 
 ###
 
-PATCH {{baseURL}}/api/restaurants/200222
+PATCH {{baseURL}}/api/restaurants/2
 Content-Type: application/json
 
 {
@@ -33,7 +33,7 @@ Content-Type: application/json
 
 ###
 
-POST {{baseURL}}/api/restaurant/22/dishes
+POST {{baseURL}}/api/restaurant/2/dishes
 Content-Type: application/json
 {
   "Name": "Spaghetti Bolognese",
