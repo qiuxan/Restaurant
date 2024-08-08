@@ -3,16 +3,16 @@
 using Microsoft.AspNetCore.Http;
 using System.Security.Claims;
 
-namespace Restaurants.Application.User;
+namespace Restaurants.Application.Users;
 
 public interface IUserContext
 {
-    CurrentUser? CurrentUser();
+    CurrentUser? GetCurrentUser();
 }
 
 public class UserContext(IHttpContextAccessor httpContextAccessor) : IUserContext
 {
-    public CurrentUser? CurrentUser()
+    public CurrentUser? GetCurrentUser()
     {
         var user = httpContextAccessor?.HttpContext?.User;
 
