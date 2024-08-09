@@ -1,5 +1,5 @@
 ﻿@baseURL = https://localhost:7206
-@token = CfDJ8GadAzmW3mlJh06rLi7m0YnhFBvjrtRc61Z2RyaZNbmwGbqyw5VH5DDIgkpm7TnIxLQkR1Y8o-Fgf5Kt55yVCX8omlpfbR48fczsY5rXX2G3x2DvsVFQSk0VJfLTBsnm47xnSa8RRElOUgoqqZ8_PPyi4xli8xeEqyp6kfVQPj7mFbGZF4VmDZmm01I3lUaGFpFIE6uKTeeSpuNNxumlgGvvMF2-mGYeZ9EUKAVuPiOqPLTwj7jlT_570v2v4hZ5XNZmJ8u7XGOwyX-XZIO80h_fnSn9wYutqwo6u8rgg8rgzgxKyV-uq7mLylS1AOplEmBxSk3HL2dTRFWfK0LZjpwPfU9_Eh3BHqwLYh8chsBg_L9_NSBr3gnZInenaJ4S_GMl5dGSwhX_tummS4j6ydXsqnj2IVBDhRwuBQKvweA6tTewVpn0AHOzbCwA-QjDihD7mWXUvpR0n1L1yip4BjY4RbwTyTAK4CpsswBpu1JW0fi2-XhEvAS-8x8Helo-UywTZ3V3s_sPnI5mzGA8khXzw0tabNyj-_hk7JD_ByTK1e21tGsOFnaug22cKYPR9ZWPcrjKyenKy5VkWH2rsC8gVRxSg2My8WxIfNaEPxmH-ee3sMygwKW6aNA_YqMNpane_SM_uKNHr7vqMPsDKzqEdkpJBxTBU2PJfcDCa4X__nlJjvjAYO8jlSerYA87FA
+@token = CfDJ8GadAzmW3mlJh06rLi7m0Ym2B0dVGHxX5LtXFqY3t00391ezi3s_kC7bWSliAFvkQagb290CDbfQoq9-eEbYiFUqGH4zSOLh_GYVLad0eB1K5p3gj7ruoCiVU-RHKUJgUMW3ozlbZPm1UFV-VXlWM7qDfTvQBmUQ-aSVVyeeX3QPdAXUcUs2DAT2MKaMAEtCPLsJW2NG8dowV84bduxOCIX5oz2b3mFUB4olq_PBv_8v-ghKd_miLhwGPn0pY_pTZXiRtO64g9T5hvEmBOwHytamzWTo4Z-5Xd7-fZHZqI1dh9e3ZW-Ewye1Bp47gEpo3eKuDcAf89cnvY2dbHnToeQwzbyCuJOhD1JyDm2QsCWp1ZbgdL93GL5TmMdEsAY8HQ8bgvtTc0Yrnz_q6ZnUdbiLxZ61V5Q4xgmEXc8EMEJ5lwtxlKeMFbIztsL-l4ZkhgxyY422kunLR1hCNxFxvS0XpOlx7P9EK5Je8Jjk8rzUGMJDSbOxSH62yZSwKi7t8NWetzBQLDoat-Athx9txNbYKVec69wXJAT4ERDZHvApqyV67nUQq6-vDl7g_fY-yjSJ089mVK7CVJXVBDM_Zk0DyAsGxOYJp0kLhP-6Iie9e1s-5rlyMeEDbD7RBXFX7zsm_8tnTTGDJqco8oWCOH_I8v1HZLZHS3R5tKxPdKTzHoe6_YixlASnv5KQAd0-uNPQ5OIK1EZtC497OPlo5pCzwWixMJrm8gxsQ1Ca4RnTT4v_6_vm8h4Yx7CO_OhshEKDC-OH6wXfuBccU1Mi6P2XYmbDBbyoC2WCwxBO5zx3
 
 
 GET {{baseURL}}/api/restaurants
@@ -7,15 +7,18 @@ Authorization: Bearer {{token}}
 ###
 
 GET {{baseURL}}/api/restaurants/2
+Authorization: Bearer {{token}}
+
 
 ###
 
 POST {{baseURL}}/api/restaurants
+Authorization: Bearer {{token}}
 Content-Type: application/json
 {
-  "Name": "d",
-  "Category":"Italian",
-  "Description":"New Description"
+    "Name": "Restaurant created by owner",
+    "Category":"Italian",
+    "Description":"New Description"
 }
 
 ###
@@ -62,7 +65,7 @@ POST {{baseURL}}/api/identity/register
 Content-Type: application/json
 
 {
-    "email": "testuser2@test.com",
+    "email": "user@test.com",
     "password": "Password1!"
 }
 
@@ -72,6 +75,6 @@ POST {{baseURL}}/api/identity/login
 Content-Type: application/json
 
 {
-    "email": "testuser@test.com",
+    "email": "owner@test.com",
     "password": "Password1!"
 }
