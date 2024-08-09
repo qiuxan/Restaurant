@@ -32,9 +32,9 @@ namespace Restaurants.Infrastructure.Seeders
         private IEnumerable<IdentityRole> GetRoles() 
         {
             List<IdentityRole> roles = [
-                new(UserRoles.Admin),
-                new(UserRoles.User),
-                new(UserRoles.Owner)
+                new(UserRoles.Admin){ NormalizedName = UserRoles.Admin.ToUpper() },
+                new(UserRoles.User){ NormalizedName = UserRoles.User.ToUpper()},
+                new(UserRoles.Owner){ NormalizedName = UserRoles.Owner.ToUpper()}
             ];  
 
             return roles;
