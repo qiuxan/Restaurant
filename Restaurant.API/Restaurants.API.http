@@ -1,7 +1,6 @@
 ﻿@baseURL = https://localhost:7206
-@token = CfDJ8GadAzmW3mlJh06rLi7m0Yl8r2Koa780RzS9eVK_3ir7Oyn7j79NQejrj4K3-uUDNlTqWaSdisfU06n7Qf1giq-gjNummeMlNWBWjXU4BlbGtvwYcWrsHErf-FQsBFjXARhuVuCtmXs0NUZ1ksZns617jE9ZT_b96ZlGQSTdL0Kegx2Anl1GCd_3u7AhpH8bmu9Ck_OnlE0u3uBvjinFkAOEegARBJvCb02C3j5c2QgBRpU83L-xzVilQZo94QEiut9XfKnx5tzQMha_cf3ochjYUmsQFEdNVlOXGZfxVzWqkUpPCrO-9bfrkPtn8GYX_RShgvgYoLsYKE9jA5kHqUIx3JcLfhjxYwmcpu2wtU0EyOPMgKN0n30NdEUXlnnmol1SXK0-QBFll4eOfOa5MT44n2uxhykYuh9e3ggjJkKFLX8qihgnpadyyaLxP00Orq4ZQwvVrF6furUVunJ2IypFIKIVHce0hDt-DVsoCxxoDyu68-5TOuzzthXd-5yjvFhaMqBOz9z7a34zI-OoVrnrKLINpF2SAYJODbcWPyXwVZtuRDTFLeqoh3gOrNue6bAUrmYn1Oj0-hIgt2XLQcwp2K4lY_JQNwgOCgwev_PPW3G1Si3I7Oy4_K1ubmUNgbGVXy6_i3JViuSkEndGPN4uPmaxwAsr_Wb-38kE-IhV-zJg_lmcU-OUAGqaseyD6E-AjHPmqL1SKIhrKWvbLhy68lN0IKGB9Cq-Vf7S0KllTJ_hy1M0y5MsjSkLubkyj8FH0Ojly9PyW59aGf_Qqt0
- 
-
+@token = CfDJ8GadAzmW3mlJh06rLi7m0YkdgmEbAnlAgjH0p_QwQyfIkjAfF4pyPOkPK8uFwfSmgAkNL2Gav6J0W-Sw6IhFX_cs8xnq-GXS4QqDlbhUZ23h0wDjOBXEdS0C3q81Nm7ZurdruEoMaQAvs1nQ7UkgRDGhLIXvQ6OXqx4IUXjNK3DbT_UyR1vmpjv9-tKxJG5j-uW0-A50DyWmBm_t4WJePWQF8X8jHRtgPQtYx1JrU-cSvIRbJO6BYNZW8L_65npgr21Oe_3uYraCmvsivq4OjTkrD7vYCzSOr9ECf9IDMzwrPcnYyJ8AU253gdG7y4lE9xEEn9kDCRLSvGIUi8urEtWNZGK2eh8DTSHta66VsVq6vJIDNipbSx2SsORE8zBzPyL4G2dDYZHmqh7HzoX_oYiify2adYfVDEOOMoO7vVt3BTa2IR9E3ly5hg1babMvAtunYjP1SRH8ys09HDKg3Pk7umrkJ06YDuNc3sUIqtxA9Dfg-yND3ini5MUxNFtBfBHohcwC9HqTh7WGARZK7khFINVxP4ZO_7ro4tiTHAaNTvWJgfo_yVqYxjzI9xke9TryCVWNT1Cp43YGDB-jg-GiXCShJKNcVzJXmIC2EGgk2MgvDOXpVTUfhGrJ-01d5dUPm1FKE6OQsk00YNZhFEOunqWuAkpifHjA8kzQIaLcX3dUE4ruOvoFFRsRpskuEC0dKxVG5LHbnOTfVpo4r-_IlCZgBAEAE5niGNFGUZL8MRTY2eVZNedA_Scnyt1X5NKlvpLIT_-i6kDOsq6AiW0
+  
 
 GET {{baseURL}}/api/restaurants
 Authorization: Bearer {{token}}
@@ -9,7 +8,6 @@ Authorization: Bearer {{token}}
 
 GET {{baseURL}}/api/restaurants/2
 Authorization: Bearer {{token}}
-
 
 ###
 
@@ -79,3 +77,15 @@ Content-Type: application/json
     "email": "testuser2@test.com",
     "password": "Password1!"
 }
+
+###
+
+PATCH {{baseURL}}/api/identity/user
+Authorization: Bearer {{token}}
+Content-Type: application/json
+{
+  "DateOfBirth":"1980-01-01",
+  "Nationality":"British"
+}
+
+###
