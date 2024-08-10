@@ -31,7 +31,7 @@ namespace Restaurants.Infrastructure.Extensions
             services.AddScoped<IDishesRepository, DishesRepository>();
 
             services.AddAuthorizationBuilder()
-                .AddPolicy("HasNationality", builder=> builder.RequireClaim("Nationality","China"));
+                .AddPolicy(PolicyNames.HasNationality, builder=> builder.RequireClaim(AppClaimTypes.Nationality,"China"));
 
         }
     }
