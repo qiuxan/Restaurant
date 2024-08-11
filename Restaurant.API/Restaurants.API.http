@@ -1,6 +1,6 @@
 ﻿@baseURL = https://localhost:7206
-@token = CfDJ8GadAzmW3mlJh06rLi7m0YmpvTdEIWYHxWXGcvqhg91FML7DeNH1XFLbyedGlbcNR-hKA7t_yjccsAYX_hq5yXnZCC0GqAyljDacjRvcuCqzbeUcukVZ_1k_rkURjhBeQNE-Vvjl3MzZXUO56h4qHJRFtWrCH6y6wCVAbO0k_Pyk9VHr-d38WhrYrPHGvWBSYOQ-I_4-kHFlIV7-8oP_Av1Wzz83yOtQA56mHVnNMR6hJHFQqBsXCdPm4fdIyvoCLDtKTuE6KNuxoARCNLPM1pKNDFco8ypkzW-uF-pLUHij3TEvH1NBkCTNB-V9gZNQIYSOJM0_ajj3MNC5Qs7V_5V_CuBW53samIrT_pZPE-C07d3N_6zi77fgS3qSU7ZH2-V9Mt-3ruTkDHY2sOulJc3ir_-gs20ihwCH7hyhP9wobvRZJGiPZSga30iqA9KTixuNqdfMY-PeTLm3g8ya8QsyelgLDW_T3_NZ2R2AktIjOFLDY_EOho6c3wtv7D1F__TW-ow8T_Kmfd6nAjuHe0G6GJffLsmpize7iNITi_o8dCWsAu6qC51b-a2kF3QgKcs_D-qWDlNUEWlelzZzl_1W3ls3dLBekl9n6Ah-XcpX3TEgnZQDvdmgDs6dmsZ_c3qSI7kxT33vvcwoItWAuLZJnzAvhQJhB1BQZYjX__fG2wik7xr5iD2OaTEF-Tb1rtuzkmFdNyRm5-_H03A-QY_BifyJrXFnTbVt6E9q-Mow6sHIV-OvMQtkeZbV3y_uIn4DCOJsq4QhJMkaZyOI1Ek
-
+@token = CfDJ8GadAzmW3mlJh06rLi7m0Ymn9wDzCM1IJyL3zWVBme5qwWzQfBW7rKaTG9vonA9DCrhFYgBODbKaaImjpTXzqOu-_EbAehR2WzuXXq0FR9uawFXQI0xSEZcTIt3SiBJF6KydVxL1RkqUkGX0X67N0xybuh8fgFEPb3TWLwGTjONGLeXhWJRw2HhWt7RYnJVOD33v-L5tpc5o6JKu8MLpXT-RHTJASRqTiUeV4He2xolY9c07aob5j2TXJTsCZZz9BSlOLL9qe_vXlb5VP6RFQQoZOArcj1u4HzHkmEV68H9ve6OAbRsvlwfmqgpd0p-oZJAXOBodm0yMDqaQrM9aZg-CU_OlYqD2qGhQ6FY1fcRd-UT5zOyr8WNrpZyqdwp7pYWBQhDZv-OJOdD2HVcFgjj1UP5wfdrioArWfNoa3vyAGBCekEkBhZNSfDNva7LhgCANm4aDM_S1EEdMSOuOXTBi01QGiloxvQHQougJHc_VD5ZR3j8tjZzRXByR7ajJTQaM9k68516nG-UZTWfJzubSAPFxJnSEc_h70FF6s_xDQrqD31AeglLNkdWZj8rOsFJOV43vWbIJLWGdu5nUKwUKn88zcF37Jy3yBudPMSx6tfmTNCfWAAQHy6BtDLV-uFVrxqvNPSN2CD_HDQ5OwTjdrIITuKp_5vE-NIELnpd_XLdgVKT_ZSVNY5rpYv-Fuxo9EsLtdBvzHvOwoKhqtl3MW6b-IaOhKROW9X_v2SdmiezEqjvWui81AfTE0EFGHrt1S93i_DNi8Fn1wwawp6-nvJQTgh1oZazeKZ40XPtg
+ 
 
 GET {{baseURL}}/api/restaurants
 Authorization: Bearer {{token}}
@@ -15,7 +15,7 @@ POST {{baseURL}}/api/restaurants
 Authorization: Bearer {{token}}
 Content-Type: application/json
 {
-    "Name": "Restaurant created by owner",
+    "Name": "Restaurant created by admin with ID",
     "Category":"Italian",
     "Description":"New Description"
 }
@@ -74,7 +74,7 @@ POST {{baseURL}}/api/identity/login
 Content-Type: application/json
 
 {
-    "email": "testuser2@test.com",
+    "email": "admin@test.com",
     "password": "Password1!"
 }
 
