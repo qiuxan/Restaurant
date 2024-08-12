@@ -74,7 +74,7 @@ POST {{baseURL}}/api/identity/login
 Content-Type: application/json
 
 {
-    "email": "admin@test.com",
+    "email": "user@test.com",
     "password": "Password1!"
 }
 
