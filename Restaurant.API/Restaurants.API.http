@@ -1,5 +1,5 @@
 ﻿@baseURL = https://localhost:7206
-@token = CfDJ8GadAzmW3mlJh06rLi7m0Ymn9wDzCM1IJyL3zWVBme5qwWzQfBW7rKaTG9vonA9DCrhFYgBODbKaaImjpTXzqOu-_EbAehR2WzuXXq0FR9uawFXQI0xSEZcTIt3SiBJF6KydVxL1RkqUkGX0X67N0xybuh8fgFEPb3TWLwGTjONGLeXhWJRw2HhWt7RYnJVOD33v-L5tpc5o6JKu8MLpXT-RHTJASRqTiUeV4He2xolY9c07aob5j2TXJTsCZZz9BSlOLL9qe_vXlb5VP6RFQQoZOArcj1u4HzHkmEV68H9ve6OAbRsvlwfmqgpd0p-oZJAXOBodm0yMDqaQrM9aZg-CU_OlYqD2qGhQ6FY1fcRd-UT5zOyr8WNrpZyqdwp7pYWBQhDZv-OJOdD2HVcFgjj1UP5wfdrioArWfNoa3vyAGBCekEkBhZNSfDNva7LhgCANm4aDM_S1EEdMSOuOXTBi01QGiloxvQHQougJHc_VD5ZR3j8tjZzRXByR7ajJTQaM9k68516nG-UZTWfJzubSAPFxJnSEc_h70FF6s_xDQrqD31AeglLNkdWZj8rOsFJOV43vWbIJLWGdu5nUKwUKn88zcF37Jy3yBudPMSx6tfmTNCfWAAQHy6BtDLV-uFVrxqvNPSN2CD_HDQ5OwTjdrIITuKp_5vE-NIELnpd_XLdgVKT_ZSVNY5rpYv-Fuxo9EsLtdBvzHvOwoKhqtl3MW6b-IaOhKROW9X_v2SdmiezEqjvWui81AfTE0EFGHrt1S93i_DNi8Fn1wwawp6-nvJQTgh1oZazeKZ40XPtg
+@token = CfDJ8GadAzmW3mlJh06rLi7m0YnTPBHgqFdswjY1_4KYBf-UH1Qi8RfomB1azBTKm5minzX2AQ3H3ufvdKPYM2RyF3H99ncz6UsN3kAgU59vkD1iO6qU5Y_O_60gLQGs2cuv98RHFOMN_op2FiQKIbSQvp9Rt4OzN35UbAwgqrQgUalG8HfbyftMDZbgHA74zz0Q8RBn-obW6aBn6P2s8ang4BkzaGGSm3IZPhcPFGZ0BaSY_a89S6DdaxHDPhb9roDXVk2L7sGk5WXULSAEXUaGLQEQR9QODv1zW6rIon_qPyqg6GAlJSR7_fu9Yt1o0jRIBYVS_1xvFS8c0QWjI1nwN-H8Nl4AP8i-jAlfJivAJJxiw5qitLAe-BXp5RbA7FSDlUwnN_4jamStk26GNgaI058fwpMILV34hpuOTTw9iIzq3Dy7FQZufgT-nc3qGNs7tmBK7gytJahHBj-6FYLP8qwu8KBkHJyGWeI70kso1Hw4piLpDLmFHjWz1vtPGlpk0KVmDJ3E8_YGHht3eJvocL5qpobjYQKNw75lWHavVHNM6iE6ovVtbeIqRCksC4g9cxdEW-Y82VoxNHDx2_0CwmcOyySxqQ7udhUGvh58R3bU81ArXnL2_X8ZsWpCxBK3TK98fAfzOY79XnYAURZd4_HoZD0IN8kl2tsswIY3xz2OauT9cbnjU1ACkLdZnOLXRnPISiF5JTJnWaaUgwoxV5JkvSox0stsxM95hihCrYJKOkDU8JOtMRZDdocEY1IeUBpaldJRyTFMG0cRyaGIoL0jitW-rx0yrxtYQ8nEF6E7
  
 
 GET {{baseURL}}/api/restaurants
@@ -22,11 +22,12 @@ Content-Type: application/json
 
 ###
 
-#DELETE {{baseURL}}/api/restaurants/2
-#Authorization: Bearer {{token}}
+DELETE {{baseURL}}/api/restaurants/2006
+Authorization: Bearer {{token}}
 ###
 
-PATCH {{baseURL}}/api/restaurants/2
+PATCH {{baseURL}}/api/restaurants/2006
+Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
@@ -74,7 +75,7 @@ POST {{baseURL}}/api/identity/login
 Content-Type: application/json
 
 {
-    "email": "admin@test.com",
+    "email": "owner@test.com",
     "password": "Password1!"
 }
 

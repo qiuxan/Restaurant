@@ -28,7 +28,7 @@ public class RestaurantsController(IMediator mediator)
     }
 
     [HttpGet("{id}")]
-    [Authorize(Policy = PolicyNames.HasNationality)]
+    //[Authorize(Policy = PolicyNames.HasNationality)]
     public async Task<ActionResult<RestaurantDto?>> GetById([FromRoute]int id)
     {
 
@@ -46,7 +46,7 @@ public class RestaurantsController(IMediator mediator)
 
         
 
-        return NotFound();
+        return NoContent();
     }
 
     [HttpPatch("{id}")]
@@ -63,7 +63,7 @@ public class RestaurantsController(IMediator mediator)
         }
 
 
-        return NotFound();
+        return NoContent();
     }
 
     [HttpPost]
