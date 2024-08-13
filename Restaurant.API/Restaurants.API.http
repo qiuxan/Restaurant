@@ -1,5 +1,5 @@
 ﻿@baseURL = https://localhost:7206
-@token = CfDJ8GadAzmW3mlJh06rLi7m0YnTPBHgqFdswjY1_4KYBf-UH1Qi8RfomB1azBTKm5minzX2AQ3H3ufvdKPYM2RyF3H99ncz6UsN3kAgU59vkD1iO6qU5Y_O_60gLQGs2cuv98RHFOMN_op2FiQKIbSQvp9Rt4OzN35UbAwgqrQgUalG8HfbyftMDZbgHA74zz0Q8RBn-obW6aBn6P2s8ang4BkzaGGSm3IZPhcPFGZ0BaSY_a89S6DdaxHDPhb9roDXVk2L7sGk5WXULSAEXUaGLQEQR9QODv1zW6rIon_qPyqg6GAlJSR7_fu9Yt1o0jRIBYVS_1xvFS8c0QWjI1nwN-H8Nl4AP8i-jAlfJivAJJxiw5qitLAe-BXp5RbA7FSDlUwnN_4jamStk26GNgaI058fwpMILV34hpuOTTw9iIzq3Dy7FQZufgT-nc3qGNs7tmBK7gytJahHBj-6FYLP8qwu8KBkHJyGWeI70kso1Hw4piLpDLmFHjWz1vtPGlpk0KVmDJ3E8_YGHht3eJvocL5qpobjYQKNw75lWHavVHNM6iE6ovVtbeIqRCksC4g9cxdEW-Y82VoxNHDx2_0CwmcOyySxqQ7udhUGvh58R3bU81ArXnL2_X8ZsWpCxBK3TK98fAfzOY79XnYAURZd4_HoZD0IN8kl2tsswIY3xz2OauT9cbnjU1ACkLdZnOLXRnPISiF5JTJnWaaUgwoxV5JkvSox0stsxM95hihCrYJKOkDU8JOtMRZDdocEY1IeUBpaldJRyTFMG0cRyaGIoL0jitW-rx0yrxtYQ8nEF6E7
+@token = CfDJ8GadAzmW3mlJh06rLi7m0YkZ2v_a6RLPI_fIdNPQ4XjZ2ny4fK7SomWrsQoJFxuJ3f2CPSuXZUvBeUutKgZxt2pBLr4wenoTx6LXGP4irLJfbv21nPrLhmbpOYBz3HUPJHFh0Ibx0uvWBldgAks7V-xJwlBbvnZPCHXvZjdEHCF6k9RQAF1F2DnlzzUKEETq0FEkjYyisHZ53aaDLBAIQ7Bb5TiSmgu4FaGbbM84pOBXltRNFvgiK1ZFbOkGc79YOyaJmQx-26601BodcyKvOYeSqor51F0vw3JSPyrctSGVw2GTF24jzELM3IbcGaEjT6wUQIjm_xM0QyTiDkYD8YVJ8xaGXblgRnamMI7RDLct44LyB2psdENB1Gi7skqqa7bzwFhJpNYMMOgEOZNedY8MRoAD1GWH9PksNFloJAqxKEUKog8-EPJSw4XLxp-04crXFpbcJk7MudAcUXdT8pwHDGqLl2DyOG1qL7IiHnz9WXhZBizK-xo6xIHGTaMt_Mmx8-Lr9terEZQshVUQ0Q80-edwJUtmPDN5PYcTuLZ4sWLYK7bBsgRCyVu0wLNxc2kUZG3Oaw4gi363PGr4SOmCuoDy7HMVbyvGkobvO0wbR0h_f11u6uRbhr5XEbFsCnwP7MAsSO9shPRBl4sdbOGCCmzV60XP9V3I7775eWdc0kcqCW7gq_kFucyhYJq4ZZ73hutKYNVzeRSZL01qbT6rJ8wIv9-nzlTsQkpHhu--Ha5_wZu-InBEBtjkaS75N1tMrvw-e82i7rIwJTvRT_ryhsKxxQ1pokG2pGD-bZ0p
  
 
 GET {{baseURL}}/api/restaurants
@@ -65,7 +65,7 @@ POST {{baseURL}}/api/identity/register
 Content-Type: application/json
 
 {
-    "email": "user@test.com",
+    "email": "owner1@test.com",
     "password": "Password1!"
 }
 
@@ -75,7 +75,7 @@ POST {{baseURL}}/api/identity/login
 Content-Type: application/json
 
 {
-    "email": "owner@test.com",
+    "email": "owner1@test.com",
     "password": "Password1!"
 }
 
