@@ -3,10 +3,10 @@ using Restaurants.Application.Restaurants.Dtos;
 
 namespace Restaurants.Application.Restaurants.Commands.CreateRestaurant;
 
-public class CreatRestaurantCommandValidator : AbstractValidator<CreateRestaurantCommand>
+public class CreateRestaurantCommandValidator : AbstractValidator<CreateRestaurantCommand>
 {
     private readonly List<string> validaCategories = ["Italian", "Polish", "Mexican", "Chinese", "Indian", "Japanese", "Thai"];
-    public CreatRestaurantCommandValidator()
+    public CreateRestaurantCommandValidator()
     {
         RuleFor(dto => dto.Name)
             .Length(3, 100);
