@@ -11,7 +11,7 @@ using Restaurants.Domain.Repositories;
 namespace Restaurants.Application.Restaurants.Commands.UpdateRestaurant;
 
 public class UpdateRestaurantCommandHandler(
-    ILogger<DeleteRestaurantCommandHandler> logger,
+    ILogger<UpdateRestaurantCommandHandler> logger,
     IRestaurantsRepository restaurantRepository,
     IMapper mapper,
     IRestaurantAuthorizationService restaurantAuthorizationService
